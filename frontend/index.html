@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Finance Advisor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>💰 AI Finance Advisor</h1>
+
+  <div class="container">
+    <h2>Add Transaction</h2>
+    <input type="number" id="amount" placeholder="Amount (₹)" />
+    <input type="text" id="category" placeholder="Category (e.g. Food, Rent)" />
+    <select id="type">
+      <option value="expense">Expense</option>
+      <option value="income">Income</option>
+    </select>
+    <button id="addBtn">Add</button>
+  </div>
+
+  <div class="container">
+    <h2>Transactions</h2>
+    <ul id="txList"></ul>
+  </div>
+
+  <div class="container">
+    <h2>💡 AI Suggestion</h2>
+    <button id="getSuggestionBtn">Get Financial Advice</button>
+    <p id="suggestion"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
